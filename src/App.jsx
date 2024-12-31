@@ -7,10 +7,13 @@ function App() {
   
   const helper=(list,id,checked)=>{
     return list.map((item)=>{
+      console.log("hello");
       if(item.id===id){
         return {
           ...item,
           checked:!checked
+          
+          
         }
       }
       return item
